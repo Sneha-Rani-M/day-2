@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Awareness | Stay Healthy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#home">💚 Health<span>Awareness</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#topics">Health Topics</a></li>
+        <li><a href="#habits">Healthy Habits</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR HEALTH, YOUR PRIORITY</p>
+        <h1>Take Care of Your Health, <span>Live a Better Life</span></h1>
+        <p>Learn simple ways to stay healthy, build good habits, and make informed choices for a happier life.</p>
+        <a class="btn" href="#topics">Explore Health Tips</a>
+      </div>
+      <div class="hero-art" aria-label="Health and wellness illustration">
+        <div class="heart">💚</div>
+        <div class="hero-caption">Healthy body, healthy mind</div>
+      </div>
+    </section>
+
+    <section class="section" id="topics">
+      <div class="section-heading">
+        <p class="eyebrow">LEARN AND GROW</p>
+        <h2>Important Health Topics</h2>
+        <p>Explore key areas of health and discover everyday ways to care for yourself.</p>
+      </div>
+      <div class="cards">
+        <article class="topic-card">
+          <div class="topic-icon pink">🥗</div>
+          <h3>Healthy Nutrition</h3>
+          <p>Eat a balanced diet with fruits, vegetables, whole grains, and adequate protein.</p>
+          <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank" rel="noopener">Learn more ↗</a>
+        </article>
+        <article class="topic-card">
+          <div class="topic-icon blue">🏃</div>
+          <h3>Physical Activity</h3>
+          <p>Regular movement supports heart health, strength, energy, and overall well-being.</p>
+          <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener">Learn more ↗</a>
+        </article>
+        <article class="topic-card">
+          <div class="topic-icon yellow">🧠</div>
+          <h3>Mental Wellness</h3>
+          <p>Make time for rest, meaningful connections, and activities that help you manage stress.</p>
+          <a href="https://www.who.int/health-topics/mental-health" target="_blank" rel="noopener">Learn more ↗</a>
+        </article>
+        <article class="topic-card">
+          <div class="topic-icon green">💧</div>
+          <h3>Hydration</h3>
+          <p>Drink water regularly throughout the day, adjusting your intake to your needs and activity.</p>
+          <a href="https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/" target="_blank" rel="noopener">Learn more ↗</a>
+        </article>
+        <article class="topic-card">
+          <div class="topic-icon purple">😴</div>
+          <h3>Quality Sleep</h3>
+          <p>Keep a consistent sleep routine and create a calm environment for restful sleep.</p>
+          <a href="https://www.cdc.gov/sleep/about/index.html" target="_blank" rel="noopener">Learn more ↗</a>
+        </article>
+        <article class="topic-card">
+          <div class="topic-icon orange">🩺</div>
+          <h3>Preventive Care</h3>
+          <p>Stay informed about recommended checkups, vaccinations, and preventive health services.</p>
+          <a href="https://www.who.int/health-topics" target="_blank" rel="noopener">Explore topics ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section habits-section" id="habits">
+      <div class="section-heading">
+        <p class="eyebrow">SMALL STEPS, BIG CHANGE</p>
+        <h2>Build Healthy Daily Habits</h2>
+        <p>Tick the habits you complete today. Your progress updates automatically.</p>
+      </div>
+      <div class="habit-box">
+        <div class="progress-info">
+          <strong>Today's progress</strong>
+          <span id="progress-text">0 of 5 completed</span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+        <div class="habit-list">
+          <label class="habit"><input type="checkbox"><span>💧 Drink water regularly</span></label>
+          <label class="habit"><input type="checkbox"><span>🥦 Eat a balanced meal</span></label>
+          <label class="habit"><input type="checkbox"><span>🚶 Take a walk or move your body</span></label>
+          <label class="habit"><input type="checkbox"><span>🧘 Take a mindful break</span></label>
+          <label class="habit"><input type="checkbox"><span>🌙 Follow a relaxing bedtime routine</span></label>
+        </div>
+        <p class="habit-note">Tip: Start with small, realistic changes and build consistency over time.</p>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="section-heading">
+        <p class="eyebrow">TEST YOUR KNOWLEDGE</p>
+        <h2>Health Awareness Quiz</h2>
+        <p>Answer these quick questions to review some healthy habits.</p>
+      </div>
+      <div class="quiz-box">
+        <form id="health-quiz">
+          <fieldset class="question">
+            <legend>1. Which is part of a balanced diet?</legend>
+            <label><input type="radio" name="q1" value="a"> Only sugary snacks</label>
+            <label><input type="radio" name="q1" value="b"> A variety of nutritious foods</label>
+            <label><input type="radio" name="q1" value="c"> Skipping every meal</label>
+          </fieldset>
+          <fieldset class="question">
+            <legend>2. What can regular physical activity support?</legend>
+            <label><input type="radio" name="q2" value="a"> Overall health and fitness</label>
+            <label><input type="radio" name="q2" value="b"> Avoiding all sleep</label>
+            <label><input type="radio" name="q2" value="c"> Replacing water</label>
+          </fieldset>
+          <fieldset class="question">
+            <legend>3. Which habit can support better sleep?</legend>
+            <label><input type="radio" name="q3" value="a"> Changing bedtime drastically every night</label>
+            <label><input type="radio" name="q3" value="b"> Keeping a regular sleep routine</label>
+            <label><input type="radio" name="q3" value="c"> Drinking energy drinks before bed</label>
+          </fieldset>
+          <button class="btn" type="submit">Submit Answers</button>
+          <p id="quiz-result" class="result" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-card">
+        <div class="about-symbol">🌿</div>
+        <div>
+          <p class="eyebrow">ABOUT THIS WEBSITE</p>
+          <h2>Making Health Awareness Simple</h2>
+          <p>This website is an educational project designed to share basic health information, encourage positive daily habits, and help visitors explore trusted health resources.</p>
+          <p class="disclaimer">Note: This website provides general educational information and is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">WE'D LOVE TO HEAR FROM YOU</p>
+        <h2>Contact Us</h2>
+        <p>Have a question or suggestion? Send us a message using the form below.</p>
+      </div>
+      <div class="contact-box">
+        <form id="contact-form">
+          <label for="contact-name">Your Name</label>
+          <input id="contact-name" name="name" type="text" placeholder="Enter your name" required>
+          <label for="contact-email">Email Address</label>
+          <input id="contact-email" name="email" type="email" placeholder="Enter your email" required>
+          <label for="contact-message">Your Message</label>
+          <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+          <p id="contact-result" class="result" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>💚 Health Awareness | Learn • Practice • Live Well</p>
+    <p>© 2026 Health Awareness. Educational project.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script>
+    // Update daily habit progress
+    const habitChecks = document.querySelectorAll(".habit input");
+    const progressText = document.getElementById("progress-text");
+    const progressFill = document.getElementById("progress-fill");
+
+    function updateProgress() {
+      const completed = document.querySelectorAll(".habit input:checked").length;
+      const total = habitChecks.length;
+      progressText.textContent = completed + " of " + total + " completed";
+      progressFill.style.width = (completed / total * 100) + "%";
+    }
+    habitChecks.forEach(check => check.addEventListener("change", updateProgress));
+
+    // Check quiz answers
+    document.getElementById("health-quiz").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const answers = { q1: "b", q2: "a", q3: "b" };
+      let score = 0;
+      for (const question in answers) {
+        const selected = document.querySelector('input[name="' + question + '"]:checked');
+        if (selected && selected.value === answers[question]) score++;
+      }
+      document.getElementById("quiz-result").textContent =
+        "You scored " + score + " out of 3. " +
+        (score === 3 ? "Excellent work! 🌟" : "Keep learning and try again! 💚");
+    });
+
+    // Front-end contact form demonstration
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("contact-result").textContent =
+        "Thank you! Your message has been prepared. This demo does not send it to a server.";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
